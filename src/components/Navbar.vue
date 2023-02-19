@@ -114,7 +114,7 @@ a {
 
 img {
   height: 80px;
-  width: 80px;
+  width: 138px;
   padding: 0.5em 1.5em 0.5em 1.5em
 }
 

@@ -10,10 +10,6 @@
     <Carousel 
       heading="Latest projects">
     </Carousel>
-    <!-- Notable clients carousel -->
-    <Carousel 
-      heading=" ">
-    </Carousel>
   </div>
 </template>
 
