@@ -2,18 +2,18 @@
 	<section class="container">
 		<p class="heading">{{ heading }}</p>
 		<div class="carousel">
-			<div class="tape">
+			<div class="tape" ref="tape">
 				<ul>
-					<li v-for="image in images" class="slot">
-				      <img :src="image.path" />
-				    </li>
+					<li v-for="(image, index) in images" :key="index" class="slot">
+				    <img :src="image" />
+				  </li>
 				</ul>
 			</div>
-			<div class="tape">
+			<div class="tape" ref="tape">
 				<ul>
-					<li v-for="image in images" class="slot">
-				      <img :src="image.path" />
-				    </li>
+					<li v-for="(image, index) in images" :key="index" class="slot">
+				    <img :src="image" />
+				  </li>
 				</ul>
 			</div>
 		</div>
@@ -23,30 +23,33 @@
 <script>
 export default {
 	name: 'Carousel',
+	props: {
+		heading: String,
+		images: {
+			type: Array,
+			required: true,
+		},
+	},
 	data() {
 		return {
-			images: [
-				{ id: 1, path: 'images/cna.png' },
-				{ id: 2, path: 'images/dell.png' },
-				{ id: 3, path: 'images/discovery.png' },
-				{ id: 4, path: 'images/fujitsu.png' },
-				{ id: 5, path: 'images/milliman.png' },
-				{ id: 6, path: 'images/natgeo.png' },
-				{ id: 7, path: 'images/phuel.png' },
-				{ id: 8, path: 'images/primo.png' },
-				{ id: 9, path: 'images/sap.png' }
-			]
+			tapeWidth: 0
 		}
 	},
 	mounted() {
-		let moveTape = anime({
-			targets: '.tape',
-			translateX: -2000,
-			direction: 'normal',
-			easing: 'linear',
-			duration: 8000,
-			loop: true
-		})
+		this.tapeWidth = this.$refs.tape.offsetWidth;
+		this.startCarousel();
+	},
+	methods: {
+		startCarousel() {
+			let moveTape = anime({
+				targets: '.tape',
+				translateX: -this.tapeWidth,
+				direction: 'normal',
+				easing: 'linear',
+				duration: 8000,
+				loop: true
+			});
+		}
 	}
 }
 </script>
@@ -63,17 +66,12 @@ export default {
 }
 .carousel {
 	display: grid;
-    grid-template-columns: auto auto;
+  grid-template-columns: auto auto;
 	background-color: white;
 	width: 100%;
 	max-width: 800px;
-    position: relative;
+  position: relative;
 	overflow-x: hidden;
-}
-.tape {
-/*	width: 1600px;
-  	position: relative;
-	overflow-x: hidden;*/
 }
 ul {
 	display: flex;

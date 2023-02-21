@@ -8,7 +8,16 @@
     </TextHero>
     <!-- Recent work carousel -->
     <Carousel 
-      heading="Latest projects">
+      heading="Latest projects"
+      :images="['images/cna.png', 
+                'images/dell.png',
+                'images/discovery.png',
+                'images/fujitsu.png',
+                'images/milliman.png',
+                'images/natgeo.png',
+                'images/phuel.png',
+                'images/primo.png',
+                'images/sap.png']">
     </Carousel>
   </div>
 </template>
