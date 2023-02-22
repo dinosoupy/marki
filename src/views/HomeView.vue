@@ -8,7 +8,7 @@
     </TextHero>
     <!-- Recent work carousel -->
     <Carousel 
-      heading="Latest projects"
+      heading="TRUSTED BY"
       :images="['images/cna.png', 
                 'images/dell.png',
                 'images/discovery.png',
@@ -19,6 +19,10 @@
                 'images/primo.png',
                 'images/sap.png']">
     </Carousel>
+    <FeatureCard
+      heading="300+"
+      text="videos created">
+    </FeatureCard>
   </div>
 </template>
 
@@ -26,12 +30,14 @@
 // @ is an alias to /src
 import TextHero from '@/components/TextHero.vue'
 import Carousel from '@/components/Carousel.vue'
+import FeatureCard from '@/components/FeatureCard.vue'
 
 export default {
   name: 'HomeView',
   components: {
     TextHero,
-    Carousel
+    Carousel,
+    FeatureCard
   }
 }
 </script>
