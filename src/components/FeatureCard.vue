@@ -26,7 +26,7 @@ export default {
 .heading {
 	font-family: Roboto;
 	font-size: 1.2em;
-	font-weight: 400;
+	font-weight: 800;
 	text-align: center;
 	max-width: 70%;
 	padding: 1rem;
