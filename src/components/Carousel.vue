@@ -42,14 +42,13 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin: 0;
 	padding: 2rem;
-	width: 100%;
 	overflow-x: hidden;
 }
 .carousel {
@@ -80,7 +79,8 @@ ul {
 }
 .heading {
 	font-family: Pompiere;
-	font-size: 4em;
+	font-size: 3em;
+	color: orange;
 	text-align: center;
 	max-width: 70%;
 	padding: 1rem;

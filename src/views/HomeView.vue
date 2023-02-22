@@ -2,7 +2,7 @@
   <div class="home">
     <!-- Hero and CTA -->
     <TextHero 
-      heading="Lorem ipsum is placeholder text commonly used in the graphic." 
+      heading="WE CREATE VIDEOS THAT CREATE BUSINESS" 
       subheading="Check out our new font generator and level up your social bios." 
       ctaText="See plans">
     </TextHero>

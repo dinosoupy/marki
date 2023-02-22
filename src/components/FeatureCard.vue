@@ -22,10 +22,11 @@ export default {
 	align-items: center;
 	margin: 0;
 	padding: 2rem;
+	background: purple;
 }
 .heading {
 	font-family: Roboto;
-	font-size: 1.2em;
+	font-size: 2em;
 	font-weight: 800;
 	text-align: center;
 	max-width: 70%;
@@ -34,5 +35,6 @@ export default {
 }
 .text {
 	font-family: Roboto;
+	font-size: 1.2em;
 }
 </style>
