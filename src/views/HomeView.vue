@@ -19,10 +19,9 @@
                 'images/primo.png',
                 'images/sap.png']">
     </Carousel>
-    <FeatureCard
-      heading="300+"
-      text="videos created">
-    </FeatureCard>
+    <FeatureGrid
+      heading="WE GET RESULTS">
+    </FeatureGrid>
   </div>
 </template>
 
@@ -30,14 +29,14 @@
 // @ is an alias to /src
 import TextHero from '@/components/TextHero.vue'
 import Carousel from '@/components/Carousel.vue'
-import FeatureCard from '@/components/FeatureCard.vue'
+import FeatureGrid from '@/components/FeatureGrid.vue'
 
 export default {
   name: 'HomeView',
   components: {
     TextHero,
     Carousel,
-    FeatureCard
+    FeatureGrid
   }
 }
 </script>

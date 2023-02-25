@@ -1,6 +1,7 @@
 <template>
 	<section class="container">
 		<p class="heading">{{ heading }}</p>
+		<br>
 		<div class="carousel">
 			<div class="tape" ref="tape">
 				<ul>

@@ -20,9 +20,10 @@ export default {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	margin: 0;
 	padding: 2rem;
-	background: purple;
+	width: 300px;
 }
 .heading {
 	font-family: Roboto;
@@ -36,5 +37,6 @@ export default {
 .text {
 	font-family: Roboto;
 	font-size: 1.2em;
+	color: grey;
 }
 </style>
