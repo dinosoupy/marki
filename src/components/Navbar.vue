@@ -80,6 +80,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0;
+  z-index: 1;
 }
 
 ul {
